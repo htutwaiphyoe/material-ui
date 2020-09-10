@@ -1,25 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import faker from "faker";
 
+import Comment from "./Comment/Comment";
 import "./App.css";
 
-function App() {
-    const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
-    const changeCurrentTime = () => {
-        setCurrentTime(new Date().toLocaleTimeString());
-    };
-    useEffect(() => {
-        changeCurrentTime();
-    }, [currentTime]);
-    const styleDiv = {
-        fontSize: "50px",
-        color: "#111",
-        fontWeight: "bold",
-    };
+const App = () => {
     return (
-        <div className="App">
-            <div style={styleDiv}>{currentTime}</div>
+        <div className="ui container comments">
+            <Comment
+                image={faker.image.avatar}
+                name={faker.name.findName}
+                date={faker.date.recent}
+            />
+            <Comment
+                image={faker.image.avatar}
+                name={faker.name.findName}
+                date={faker.date.recent}
+            />
+            <Comment
+                image={faker.image.avatar}
+                name={faker.name.findName}
+                date={faker.date.recent}
+            />
         </div>
     );
-}
+};
 
 export default App;
