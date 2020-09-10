@@ -12,19 +12,19 @@ const App = () => {
                 image={faker.image.avatar}
                 name={faker.name.findName}
                 date={date}
-                comment={faker.random.words}
+                comment="Congrats"
             />
             <Comment
                 image={faker.image.avatar}
                 name={faker.name.findName}
                 date={date}
-                comment={faker.random.words}
+                comment="Congrats again"
             />
             <Comment
                 image={faker.image.avatar}
                 name={faker.name.findName}
                 date={date}
-                comment={faker.random.words}
+                comment="Congratulations"
             />
         </div>
     );
