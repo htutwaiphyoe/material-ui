@@ -5,22 +5,26 @@ import Comment from "./Comment/Comment";
 import "./App.css";
 
 const App = () => {
+    const date = new Date().toLocaleTimeString();
     return (
         <div className="ui container comments">
             <Comment
                 image={faker.image.avatar}
                 name={faker.name.findName}
-                date={faker.date.recent}
+                date={date}
+                comment={faker.random.words}
             />
             <Comment
                 image={faker.image.avatar}
                 name={faker.name.findName}
-                date={faker.date.recent}
+                date={date}
+                comment={faker.random.words}
             />
             <Comment
                 image={faker.image.avatar}
                 name={faker.name.findName}
-                date={faker.date.recent}
+                date={date}
+                comment={faker.random.words}
             />
         </div>
     );
