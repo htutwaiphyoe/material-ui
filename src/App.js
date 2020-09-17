@@ -17,6 +17,15 @@ const App = () => {
                     comment="Congrats"
                 />
             </ApprovalCard>
+
+            <ApprovalCard>
+                <Comment
+                    image={faker.image.avatar}
+                    name={faker.name.findName}
+                    date={date}
+                    comment="Congratulations"
+                />
+            </ApprovalCard>
         </div>
     );
 };
