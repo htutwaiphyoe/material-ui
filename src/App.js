@@ -7,7 +7,7 @@ class App extends React.Component {
         message: "",
     };
     componentDidMount() {
-        console.log("Component mounted");
+        console.log("Component Mounted");
         window.navigator.geolocation.getCurrentPosition(
             (position) => this.success(position),
             (error) => this.error(error)
