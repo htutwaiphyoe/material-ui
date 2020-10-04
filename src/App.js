@@ -2,14 +2,22 @@ import React from "react";
 import "./App.css";
 
 class App extends React.Component {
-    state = {
-        latitude: null,
-        message: "",
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            lat: null,
+            message: "",
+        };
+
+        window.navigator.geolocation.getCurrentPosition(
+            (position) => this.success(position),
+            (error) => this.error(error)
+        );
+    }
 
     success = (position) => {
         this.setState({
-            latitude: position.coords.latitude,
+            lat: position.coords.latitude,
         });
     };
 
@@ -18,17 +26,11 @@ class App extends React.Component {
             message: error.message,
         });
     };
-    componentDidMount() {
-        window.navigator.geolocation.getCurrentPosition(
-            (position) => this.success(position),
-            (error) => this.error(error)
-        );
-    }
 
     render() {
         return (
             <div>
-                <h1>{this.state.latitude}</h1>
+                <h1>{this.state.lat}</h1>
             </div>
         );
     }
