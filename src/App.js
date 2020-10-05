@@ -7,12 +7,16 @@ class App extends React.Component {
         message: "",
     };
     componentDidMount() {
+        console.log("Component mounted");
         window.navigator.geolocation.getCurrentPosition(
             (position) => this.success(position),
             (error) => this.error(error)
         );
     }
 
+    componentDidUpdate() {
+        console.log("Component Updated");
+    }
     success = (position) => {
         this.setState({
             lat: position.coords.latitude,
