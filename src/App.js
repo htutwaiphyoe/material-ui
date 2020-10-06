@@ -30,13 +30,9 @@ class App extends React.Component {
             return <Season lat={this.state.lat} />;
         }
         if (!this.state.lat && this.state.message) {
-            return <div>{this.state.message}</div>;
+            return <Spinner message={this.state.message} />;
         }
-        return (
-            <div className="App">
-                <Spinner />
-            </div>
-        );
+        return <Spinner message="Click allow to continue..." />;
     }
 }
 

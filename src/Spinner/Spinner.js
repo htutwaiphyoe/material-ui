@@ -1,12 +1,13 @@
 import React from "react";
-import classes from "./Spinner.module.css";
 const Spinner = (props) => {
     return (
-        <div className={classes.spinner}>
-            <div className={classes.bounce1}></div>
-            <div className={classes.bounce2}></div>
+        <div class="ui active dimmer">
+            <div class="ui text loader">{props.message}</div>
         </div>
     );
 };
 
+Spinner.defaultProps = {
+    message: "Loading...",
+};
 export default Spinner;
