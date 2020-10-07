@@ -1,21 +1,17 @@
 import React from "react";
 import "./App.css";
 import Spinner from "./Spinner/Spinner";
+import Season from "./Season/Season";
 class App extends React.Component {
     state = {
         lat: null,
         message: "",
     };
     componentDidMount() {
-        console.log("Component Mounted");
         window.navigator.geolocation.getCurrentPosition(
             (position) => this.success(position),
             (error) => this.error(error)
         );
-    }
-
-    componentDidUpdate() {
-        console.log("Component Updated");
     }
     success = (position) => {
         this.setState({
@@ -30,19 +26,13 @@ class App extends React.Component {
     };
 
     render() {
-        let element = null;
         if (this.state.lat && !this.state.message) {
-            element = <p>{this.state.lat}</p>;
-        } else if (!this.state.lat && this.state.message) {
-            element = <p>{this.state.message}</p>;
-        } else {
-            element = <Spinner />;
+            return <Season lat={this.state.lat} />;
         }
-        return (
-            <div>
-                <h1>{element}</h1>
-            </div>
-        );
+        if (!this.state.lat && this.state.message) {
+            return <div>{this.state.message}</div>;
+        }
+        return <Spinner />;
     }
 }
 
