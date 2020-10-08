@@ -32,7 +32,11 @@ class App extends React.Component {
         if (!this.state.lat && this.state.message) {
             return <div>{this.state.message}</div>;
         }
-        return <Spinner />;
+        return (
+            <div className="App">
+                <Spinner />
+            </div>
+        );
     }
 }
 
