@@ -1,28 +1,28 @@
-.season {
-    width: 100%;
-    height: 100vh;
+.SeasonStatus {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 
-.icon_left {
+.iconLeft {
     position: absolute;
     top: 20px;
     left: 20px;
 }
-
-.icon_right {
+.iconRight {
     position: absolute;
     bottom: 20px;
     right: 20px;
 }
 
-.winter {
-    background-color: aliceblue;
-    color: rgb(59, 59, 243);
-}
 .summer {
-    background-color: rgba(255, 153, 1, 0.404);
-    color: rgba(255, 0, 0, 0.877);
+    color: orangered;
+    background-color: rgba(233, 175, 67, 0.26);
+}
+
+.winter {
+    color: rgb(77, 168, 248);
+    background-color: aliceblue;
 }
