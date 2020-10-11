@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Season from "./Container/Season/Season";
+import SearchBar from "./Container/SearchBar/SearchBar";
 class App extends React.Component {
     state = {};
 
     render() {
-        return <Season />;
+        return <SearchBar />;
     }
 }
 
