@@ -48,3 +48,11 @@ yarn add @mui/material @emotion/react @emotion/styled
     - onClick (onClick event)
     - type (button type like submit, reset)
     - sx (to define styles)
+
+## TextField
+
+- used to add form inputs on the web page
+- has different types of predefined styles
+- properties
+    - has same properties as html input
+    - sx (to define styles)
