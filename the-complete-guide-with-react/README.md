@@ -37,3 +37,14 @@ yarn add @mui/material @emotion/react @emotion/styled
     - components (to define html tag)
     - sx (to define styles)
     - most of the css styles are available in props
+
+## Button
+
+- used to add a button on the web page
+- has different types of predefined styles
+- has different types of Button (IconButton, LoadingButton)
+- main properties
+    - variant (to define theme typography style - outlined, contained, text)
+    - onClick (onClick event)
+    - type (button type like submit, reset)
+    - sx (to define styles)
