@@ -17,3 +17,13 @@ material design is the design system that Google uses to build UI of Android ope
 - prevent writing css from scratch
 - modern UI/UX components
 - fully responsive
+
+## Setting up environment
+
+1. Creating react app
+
+yarn create react-app name --template typescript
+
+2. Material UI installation
+
+yarn add @mui/material @emotion/react @emotion/styled
