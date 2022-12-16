@@ -1,5 +1,11 @@
+import Text from "./components/Text";
+
 function App() {
-  return <div>Hello Material UI</div>;
+  return (
+    <main>
+      <Text />
+    </main>
+  );
 }
 
 export default App;

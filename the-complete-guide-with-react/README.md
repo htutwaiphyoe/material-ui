@@ -5,7 +5,7 @@
 1. Introduction
 
 Css design library with pre-built components based on Material Design by Google.
-material design is the design system that Google uses to build UI of Android operating systems.
+Material design is the design system that Google uses to build UI of Android operating systems.
 
 [https://mui.com/](https://mui.com/)
 [https://m3.material.io/](https://m3.material.io/)
@@ -16,7 +16,7 @@ material design is the design system that Google uses to build UI of Android ope
 - time saving with production ready components
 - prevent writing css from scratch
 - modern UI/UX components
-- fully responsive
+- supports fully responsive
 
 ## Setting up environment
 
@@ -27,3 +27,13 @@ yarn create react-app name --template typescript
 2. Material UI installation
 
 yarn add @mui/material @emotion/react @emotion/styled
+
+## Typography
+
+- used to add a text on the web page
+- has different types of predefined styles with html tags, heading, paragraph
+- main properties
+    - variant (to define theme typography style)
+    - components (to define html tag)
+    - sx (to define styles)
+    - most of the css styles are available in props
